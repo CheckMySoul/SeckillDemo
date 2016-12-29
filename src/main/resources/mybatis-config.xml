@@ -11,28 +11,9 @@
 		<!-- 使用列别名替换列名 默认：true
 		select name as title from table
 		 -->
-		 <setting name="userColumnLabel" value="true" />
+		 <setting name="useColumnLabel" value="true" />
 		 <!-- 开启驼峰命名转换：Table(create_time) -> Entity(createTime) -->
 		 <setting name="mapUnderscoreToCamelCase" value="true" />
 	</settings>
-	
-	<environments default="development">
-		<environment id="development">
-			<transactionManager type="JDBC">
-				<property name="" value="" />
-			</transactionManager>
-			<dataSource type="UNPOOLED">
-				<property name="driver" value="com.mysql.jdbc.Driver" />
-				<property name="url" value="jdbc:mysql://127.0.0.1:3306/lalocal_ds" />
-				<property name="username" value="root" />
-				<property name="password" value="123456" />
-			</dataSource>
-		</environment>
-	</environments>
 
-
-	<mappers>
-		<mapper resource="com/ds/config/sqlxml/Channel.xml" />
-		<mapper resource="com/ds/config/sqlxml/BaseData.xml" />
-	</mappers>
 </configuration>

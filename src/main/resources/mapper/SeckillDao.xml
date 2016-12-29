@@ -4,15 +4,6 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="org.seckill.dao.SeckillDao">
-
-	<resultMap type="com.ds.entity.umeng.BaseData" id="BaseDataResult">
-		<id column="id" jdbcType="INTEGER" property="id" />
-		<result column="date" jdbcType="VARCHAR" property="date" />
-		<result column="installations" jdbcType="VARCHAR" property="installations" />
-		<result column="new_users" jdbcType="VARCHAR" property="newUsers" />
-		<result column="active_users" jdbcType="VARCHAR" property="activeUsers" />
-		<result column="launches" jdbcType="VARCHAR" property="launches" />
-	</resultMap>
 	
 	<update id="reduceNumber">
 		<!-- 具体的sql语句 -->
